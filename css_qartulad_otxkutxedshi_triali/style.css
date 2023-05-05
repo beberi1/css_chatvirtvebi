@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'nino';
+    src: url('font/bpg_extrasquare_mtavruli_2009.ttf');
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: bisque;
+}
+
+.mtavari_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.div_datrialebistvis {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 90px;
+    width: 90px;
+    animation: triali 5s linear infinite reverse;
+}
+
+
+
+.div_datrialebistvis p {
+    font-family: 'nino';
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    width: 10px;
+}
+
+
+.c {
+    grid-row: 1;
+    grid-column: 1;
+    align-self: start;
+    justify-self: self-end;
+}
+
+.a1 {
+    transform: rotate(0deg);
+    justify-self: center;
+    align-self: flex-start;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.t1 {
+
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.v1 {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.i {
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.r {
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 1;
+    grid-column: 6;
+}
+
+.t2 {
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+    grid-column: 6;
+}
+
+.v2 {
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-end;
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.a2 {
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 4;
+    grid-column: 6;
+}
+
+/*  */
+
+.c_2 {
+    transform: rotate(180deg);
+    align-self: start;
+    grid-row: 5;
+    grid-column: 6;
+}
+
+.a1_2 {
+    transform: rotate(180deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 5;
+    grid-column: 5;
+}
+
+.t1_2 {
+    transform: rotate(180deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 5;
+    grid-column: 4;
+}
+
+.v1_2 {
+    transform: rotate(180deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 5;
+    grid-column: 3;
+}
+
+.i_2 {
+    transform: rotate(180deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.r_2 {
+    transform: rotate(-90deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.t2_2 {
+    transform: rotate(-90deg);
+    justify-self: center;
+    align-self: center;
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.v2_2 {
+    transform: rotate(-90deg);
+    justify-self: center;
+    align-self: flex-start;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.a2_2 {
+    transform: rotate(-90deg);
+    justify-self: center;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+
+
+
+
+@keyframes triali {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
